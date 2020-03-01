@@ -1,0 +1,22 @@
+### acessando via GET
+GET http://localhost:3000/subscribers
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "userName": "Carlos Alberto",
+  "userChannel": "brazuca"
+}
+###
+GET http://localhost:3000/subscribers/5e5bd77c7c32b135ccd73c17
+###
+DELETE http://localhost:3000/subscribers/5e5bdb947ebe163a309ad37e
+###
+PATCH  http://localhost:3000/subscribers/5e5bd7217c32b135ccd73c16
+Content-Type: application/json
+
+{
+  "userChannel": "brazuca"
+}
+###
